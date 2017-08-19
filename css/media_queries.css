@@ -1,0 +1,171 @@
+@media screen and (max-width: 580px) {
+    main section{
+        display: block;
+        margin-bottom: 0;
+    }
+    main{
+        padding: 2rem 1.5rem;
+    }
+    #sales{
+        width: 100%;
+          margin-bottom: 2rem;
+    }
+    #stats{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    my-tasks, my-messages, my-activities{
+        width: 100%;
+        margin-bottom: 2rem;
+        display: block;
+    }
+    .tasks_num, .messages_num, .activity_num{
+        justify-content: center;
+        text-align: -webkit-center;
+    } 
+    .new_tasks, .updated_tasks, .new_messages, .new_activity{
+        margin: 1rem 0 0 0;
+    }     
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 0;
+    }
+    header section{
+        width: 100%;
+        padding: 1rem 1.5rem;
+        box-sizing: border-box;
+    }
+    header section:first-child{
+        order: 2;
+    }
+    header section:last-child{
+        order: 1;
+    }
+    header .showMenu{
+        top: 60px;
+        right: 1rem;
+    }
+    .sec_header{
+        display: block;
+        text-align: center;
+    }
+    #pai{
+        width: 70%;
+        height: auto;
+    }
+    .sec_header h2{
+        margin-bottom: 1rem;
+    }
+    #graph{
+        height: 50%;
+    }
+    .ShrinkMain{
+        margin-left: 0px;
+    }    
+}
+
+@media screen and (min-width: 580px) and (max-width: 800px) {
+    main section{
+        display: block;
+        margin-bottom: 0;
+    }
+    #sales{
+        width: 100%;
+          margin-bottom: 2rem;
+    }
+    #stats{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    my-tasks, my-messages, my-activities{
+        width: 100%;
+        margin-bottom: 2rem;
+        display: block;
+    }
+    .ShrinkMain{
+        margin-left: 0px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+    .sec_header{
+        display: block;
+        text-align: center;
+    }
+    .tasks_num, .messages_num, .activity_num{
+        justify-content: center;
+        text-align: -webkit-center;
+    }
+    .new_tasks, .updated_tasks, .new_messages, .new_activity{
+        margin: 1rem 0 0 0;
+    } 
+    #pai{
+        width: 85%;
+        height: auto;
+    }
+    .sec_header h2{
+        margin-bottom: 1rem;
+    }
+    #graph{
+        height: 50%;
+    }
+    .ShrinkMain{
+        margin-left: 0px;
+    }    
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1250px) {
+    .sec_header{
+        display: block;
+        text-align: center;
+    }
+    .tasks_num, .messages_num, .activity_num{
+        justify-content: center;
+        text-align: -webkit-center;
+    }
+    .new_tasks, .updated_tasks, .new_messages, .new_activity{
+        margin: 1rem 0 0 0;
+    } 
+    #pai{
+        width: 85%;
+        height: auto;
+    }
+    .sec_header h2{
+        margin-bottom: 1rem;
+    }
+    #graph{
+        height: 50%;
+    }
+    .close_nav{
+        display: none;
+    }
+}
+@media screen and (min-width: 1250px) and (max-width: 1350px) {
+    #pai{
+        width: 85%;
+        height: auto;
+    }
+   .sec_header select{
+        width: 170px;
+   }
+   .close_nav{
+        display: none;
+    }   
+}
+@media screen and (min-width: 1350px) and (max-width: 1450px) {
+    #pai{
+        width: 90%;
+        height: auto;
+    }
+   .close_nav{
+        display: none;
+    }    
+}
+
+@media screen and (min-width: 1450px) {
+       .close_nav{
+        display: none;
+    }  
+}    

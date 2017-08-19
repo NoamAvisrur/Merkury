@@ -1,0 +1,20 @@
+<div class="sec_header">
+    <h3>Tasks</h3>
+    <div class="tasks_num">
+        <span class="new_tasks">{{newTasks}}</span>
+        <span class="updated_tasks">{{updatedTasks}}</span>
+    </div>    
+</div>
+<div id="tasks_content">
+    <div class="task" *ngFor="#task of tasks">
+        <div class="task_content">
+            <span class="task_name">{{task.name}}</span>
+            <div>
+                <span class="task_text">{{task.content}}</span>
+                <span class="task_updated"><img src="img/clock.png">{{task.dotime}}</span>
+            </div>
+        </div>
+        <button class="tasks_more"></button>
+    </div>
+</div>
+

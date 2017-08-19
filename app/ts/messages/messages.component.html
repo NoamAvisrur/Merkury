@@ -1,0 +1,19 @@
+<div class="sec_header">
+    <h3>Messages</h3>
+    <div class="messages_num">
+        <span class="new_messages">{{newMessages}}</span>
+    </div>    
+</div>
+<div id="messages_content">
+    <div class="message" *ngFor="#message of messages">
+        <div class="task_content">
+            <img class="message_img" src="{{message.img}}" />
+            <div>
+                <span class="message_from">{{message.from}}</span>
+                <span class="message_time">{{message.time}}</span>
+                <span class="message_body">{{message.body}}</span> 
+                <button class="send"></button><button class="setting"></button>
+            </div>
+        </div>
+    </div>
+</div>

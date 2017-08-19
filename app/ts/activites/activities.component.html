@@ -1,0 +1,24 @@
+<div class="sec_header">
+    <h3>Activity</h3>
+    <div class="activity_num">
+        <span class="new_activity">{{newActivity}}</span>
+    </div>    
+</div>
+<div id="activity_content">
+    <div class="activity" *ngFor="#activity of activities">
+        <div class="activity_content">
+            <span class="top_line"></span>
+            <span class="down_line"></span>
+            <img class="activity_img" src="{{activity.img}}" />
+            <div>
+                <span class="activity_from">{{activity.from}}</span>
+                <span class="activity_text">{{activity.activity}}</span>
+                <span class="activity_subject">{{activity.subject}}</span> 
+                <div class="activity_status">
+                    <img src="img/clock.png">
+                    <span class="activity_time">{{activity.time}}</span>
+                </div>    
+            </div>
+        </div>
+    </div>
+</div>

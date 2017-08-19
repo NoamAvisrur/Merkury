@@ -1,0 +1,472 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0e1a35;
+    overflow-x: hidden;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.openNav{
+    width: 200px;
+}
+
+.ShrinkMain{
+    margin-left: 200px;
+}
+
+nav #logo {
+    height: 85px;
+    padding: 1.5rem 0 1.5rem 2rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #111;
+    position: relative;
+}
+
+.close_nav{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    color: #fff;
+    background-color: #5584ff;
+    outline: none;
+}
+
+nav #logo img{
+    width: 38px;
+}
+
+nav #logo span{
+    font-size: 1.3rem;
+    font-weight: 100;
+    color: #fff;  
+}
+
+nav a {
+    padding: 1.5rem 0 1.5rem 2rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #eee;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid #111;
+    font-weight: 100;
+    border-left: 7px solid #0e1a35;
+}
+nav a img{
+    width: 13px;
+    margin-right: 5px;
+}
+
+nav a span {
+    position: absolute;
+}
+nav a:hover, .offcanvas a:focus{
+    border-left: 7px solid #5584ff;
+    background-color: rgb(18, 33, 67);
+}
+
+.focusedSub {
+    border-left: 7px solid #5584ff;
+    background-color: rgb(18, 33, 67);
+}
+
+#container {
+    transition: margin-left .5s;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dfe2ea;
+    height: 85px;
+    padding: 2.5rem;
+    border-top: 2px solid #0e1a35;
+    box-sizing: border-box;
+}
+header .menu{
+    display: none;
+    position: absolute;
+}
+.showMenu{
+    display: block !important;
+    right: 0;
+    top: 45px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+header .showMenu a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+header .showMenu a:last-child{
+    border-bottom: none;
+}
+header .showMenu a:hover{
+    background-color: #eee;
+}
+header section{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header section:last-child{
+    position: relative
+}
+header section .search{
+    margin-left: -35px;
+    margin-top: 7px;
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+}
+
+#toggle_nav{
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    color: #5584ff;
+    font-size: 1.3rem;
+}
+
+#toggle_nav img{
+    width:25px;
+    height: 25px;
+}
+
+#add_project{
+    padding: 0.5rem;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    box-sizing: unset;
+    background-color: #5584ff;
+    color: #fff;
+    font-size: 12px;
+    outline: none;
+    cursor: pointer;
+}
+
+section input{
+    width: 50%;
+    height: 25px;
+    border: none;
+}
+
+#add_project:hover {
+    background-color: #1c2740;
+}
+
+#msg, #alerts {
+    width: 35px;
+}
+
+#alerts{
+    margin-top: 5px;
+}
+
+#new_alerts{
+    position: relative;
+}
+
+#alerts_num{
+    position: absolute;
+    font-size: 10px;
+    background-color: #5584ff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid #fff;
+    right: 3px;
+    top: 4px;
+    color: #fff;
+}
+
+#personal_st{
+    display: flex;
+    align-items: center;
+    color: #5584ff;
+    cursor: pointer;
+}
+
+#personal_st:hover, #toggle_nav:hover{
+    color: #1c2740;
+}
+
+#personal_st #personal_img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main{
+    background-color: #f6f7fa;
+    min-height: calc(100vh - 150px);
+    padding: 2rem 2.5rem;
+}
+
+main h1{
+    color: #0e1a35;
+    margin: 0 0 1rem 0;
+    font-size: 2.5rem;
+}
+
+main section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+#sales{
+    height: 380px;
+    width: 38%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+#stats{
+    height: 380px;
+    width: 60%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+my-tasks, my-messages, my-activities{
+    width: 32%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.tasks_num, messages_num, .activity_num{
+    display: flex;
+}
+.new_tasks, .updated_tasks, .new_messages, .new_activity{
+    width: 30px;
+    height: 30px;
+    background-color: aqua;
+    display: block;
+    border-radius: 50%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.new_tasks, .new_messages, .new_activity{
+    background-color: #5584ff;
+}
+.updated_tasks{
+    background-color: #f83c7b;
+}
+.task, .message, .activity{
+    height: 80px;
+    border-top: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    box-sizing: border-box;
+    position: relative;
+}
+.activity:not(:first-child){
+    border-top: none;  
+}
+.task:hover, .message:hover, .activity:hover{
+    background-color: #eee;
+    cursor: pointer;
+}
+.tasks_more{
+    width: 20px;
+    height: 45px;
+    border: none;
+    background-color: transparent;
+    background-image: url(../img/tasks_more.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.tasks_more:hover, .send:hover, .setting:hover{
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+.task_content, .message_content, .activity_content{
+    display: flex; 
+    align-items: center;
+}
+.task_name{
+    width: 35px;
+    height: 35px;
+    background-color: #5584ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+.task_text{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+}
+.task_updated, .activity_status{
+    font-size: 10px;
+    color: grey;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.task_updated img, .activity_status img{
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+.message_img, .activity_img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+    z-index: 100;
+}
+.message_from, .activity_from, .activity_subject{
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.message_time, .activity_text, .activity_time{
+    font-size: 10px;
+    color: grey;
+}
+.message_body{
+    font-size: 10px;
+    display: block;
+}
+.down_line, .top_line{
+    width: 2px;
+    height: 50%;
+    background-color: #eee;
+    position: absolute;
+    left: 2rem;
+}
+.down_line{
+    bottom: 0;
+}
+.activity:first-child .top_line, .activity:last-child .down_line{
+    display: none;
+}
+
+.top_line{
+    top: 0;
+}
+
+.send, .setting{
+    width: 18px;
+    height: 14px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.send{
+    background-image: url(../img/send.png);
+    padding: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.setting{
+    background-image: url(../img/message_settings.png);
+    padding: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.personal_info{
+    //height: 380px;
+    width: 32%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.sec_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.sec_header h2{
+    font-size: 1.8rem;
+    margin: 0;
+    color: #8492af;
+}
+
+.sec_header h3{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.sec_header select{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../img/select.png);
+    background-position: 90%;
+    background-repeat: no-repeat;
+    background-size: 5%;
+    outline: none;
+    padding-left: 2rem;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.info{
+    height: 100%;
+}
+
+#pai{
+    height: 70%;
+    margin: auto;
+    display: block;
+}
+
+#graph{
+    height: 70%;
+    width: 100%;
+}
